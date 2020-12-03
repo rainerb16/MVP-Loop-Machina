@@ -1,0 +1,84 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+#top-container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  text-align: center;
+  font-family: 'Source Code Pro', monospace;
+}
+
+#sketch-holder {
+  margin-top: 2vh;
+  padding-bottom: 10vh;
+  border: 3px solid black;
+  padding: 20px;
+  background-image: url("/assets/lights.jpg");
+  background-size: 800px;
+  background-position: center;
+}
+
+#sketch-holder #design-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 5fr;
+      grid-template-columns: 3fr 5fr;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  border-radius: 10%;
+  margin-bottom: 2vh;
+}
+
+#sketch-holder #design-container #bpmControl-holder {
+  width: 75%;
+  color: red;
+  margin-left: 12.5%;
+}
+
+#sketch-holder #design-container button {
+  background-color: red;
+  color: black;
+  padding: 3px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 14px;
+  margin-top: 2vh;
+  border-radius: 5%;
+}
+
+#sketch-holder #design-container #main-title {
+  width: 75%;
+  color: black;
+  background-color: white;
+  padding: 5px;
+  border: 1px black solid;
+  border-radius: 5%;
+}
+
+#sketch-holder #design-container #preset-options {
+  margin-top: 2vh;
+}
+
+#loop-machina {
+  font-size: 42px;
+}
+
+#techno-sequencer {
+  font-size: 36px;
+}
+
+#techno-sequencer #techno {
+  color: red;
+  font-family: 'Russo One', sans-serif;
+  font-size: 36px;
+}
+/*# sourceMappingURL=styles.css.map */

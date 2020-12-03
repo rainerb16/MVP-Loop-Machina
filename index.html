@@ -3,33 +3,37 @@
     <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
+    <link rel="icon" href="/assets/drum-machine.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <script src="libraries/p5.min.js"></script>
     <script src="libraries/p5.sound.min.js"></script>
     <script src="libraries/quicksettings.js"></script>
     <script src="libraries/p5.gui.js"></script>
-    <script src="sketch.js"></script>
+    <script src="js/sketch.js"></script>
+    <script src="js/functions.js"></script>
     <title>LOOP MACHINA - Techno Sequencer</title>
     </head>
 
     <body>
         <div id="top-container">
             <div id="header-content">
-                <h1>LOOP MACHINA</h1>
-                <h2><span id="techno">Techno</span> Sequencer</h2>
+                <h1 id="loop-machina">LOOP MACHINA</h1>
+                <h2 id="techno-sequencer"><span id="techno">TECHNO</span> Sequencer</h2>
             </div>
-            <div id="play-button-holder"></div>
             <div id="sketch-holder">
                 <div id="design-container">
-                    <h4 id="main-title">LP - TECHNO SEQ v1.0</h4>
+                    <h3 id="main-title">LM - TECHNO SEQ v1.0</h3>
+                    <div id="bpmControl-holder">
+                        <h4>BPM Control</h4>
+                    </div>
+                    <div id="play-button-holder"></div>
                 </div>
             </div>
             <div id="controls-container">
-                <div id="bpmControl-holder">
-                    <h3>BPM Control</h3>
-                </div>
                 <div id="masteramp-control">
                     <h3>Master Volume</h3>
                 </div>
