@@ -26,15 +26,12 @@ function setup() {
     cnvs.parent('beatgrid');
     cnvs.mousePressed(canvasPressed);
 
-
     // MASTER VOLUME SLIDER
     masterVolSlider = createSlider().input(() => {
         masterVolume(masterVolSlider.value() / 100, 0.1)
     })
-
     masterVolSlider.parent('masterVolControl-holder');
-
-
+    
     // BEAT GRID
     beatGrid = 16;
 
