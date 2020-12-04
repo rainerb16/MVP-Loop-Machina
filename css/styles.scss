@@ -32,7 +32,7 @@ html, body {
 
   .sound {
     text-align: right;
-    margin-top: 3.75vh;
+    margin-top: 3.6vh;
     color: black;
     background-color: white;
     border: 1px solid black;
@@ -49,9 +49,8 @@ html, body {
     border-radius: 10%;
     margin-bottom: 2vh;
 
-
   
-    #bpmControl-holder {
+    #bpmControl-holder, #masterVolControl-holder {
       width: 100%;
       color: red;
       margin-left: 12.5%;
@@ -126,7 +125,7 @@ html, body {
 
   .sound {
     text-align: right;
-    margin-top: 3.25vh;
+    margin-top: 3.2vh;
     color: black;
     background-color: white;
     border: 1px solid black;
@@ -243,7 +242,7 @@ html, body {
 
       .sound {
         text-align: right;
-        margin-top: 2.25vh;
+        margin-top: 2vh;
         color: black;
         background-color: white;
         border: 1px solid black;

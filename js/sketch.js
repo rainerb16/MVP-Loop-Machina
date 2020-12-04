@@ -12,7 +12,6 @@ let mousePressed;
 let seqPattern;
 let playPosition;
 let playButton;
-let soundFile;
 
 // ClICK ANYWHERE TO START AUDIO AS PER GOOGLE AUTOPLAY POLICY
 function mouseClicked() {
@@ -27,7 +26,14 @@ function setup() {
     cnvs.parent('beatgrid');
     cnvs.mousePressed(canvasPressed);
 
-    
+
+    // MASTER VOLUME SLIDER
+    masterVolSlider = createSlider().input(() => {
+        masterVolume(masterVolSlider.value() / 100, 0.1)
+    })
+
+    masterVolSlider.parent('masterVolControl-holder');
+
 
     // BEAT GRID
     beatGrid = 16;
@@ -191,6 +197,7 @@ function setup() {
     //     })
 
     techno = new p5.Part();
+    techno.amp = .1;
 
     techno.addPhrase(hhPhrasing);
     techno.addPhrase(kPhrasing);
