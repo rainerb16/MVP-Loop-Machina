@@ -1,5 +1,3 @@
-// SET DROPDOWN OPTIONS NEXT*********
-
 // VARIABLE DECLARATIONS
 let hiHat, kick, clap, perc, snare, openHat, ride, synthOne, synthThree;
 let hats, kicks, claps, percs, snares, openHats, rides, synthsOne, synthsThree;
@@ -14,7 +12,7 @@ let mousePressed;
 let seqPattern;
 let playPosition;
 let playButton;
-let masterAmpSlider, masterAmp, vol;
+let soundFile;
 
 // ClICK ANYWHERE TO START AUDIO AS PER GOOGLE AUTOPLAY POLICY
 function mouseClicked() {
@@ -26,8 +24,10 @@ function mouseClicked() {
 function setup() {
 
     cnvs = createCanvas(525, 350);
-    cnvs.parent('sketch-holder');
+    cnvs.parent('beatgrid');
     cnvs.mousePressed(canvasPressed);
+
+    
 
     // BEAT GRID
     beatGrid = 16;
@@ -134,7 +134,6 @@ function setup() {
         synthThreePattern
     );
 
-
     // PLAY AND PAUSE BUTTON
     playStop = createButton('Play / Stop')
     playStop.parent('play-button-holder')
@@ -161,7 +160,35 @@ function setup() {
                 console.log("Oops, please wait while sounds load...");
             }
         })
+    
 
+    // saveButton = createButton('Bounce Audio')
+    // saveButton.parent('save-button')
+    //     .mouseClicked(() => {
+    //         if (
+    //             hiHat.isPlaying() ||
+    //             kick.isPlaying() ||
+    //             clap.isPlaying() ||
+    //             perc.isPlaying() ||
+    //             snare.isPlaying() ||
+    //             openHat.isPlaying() ||
+    //             ride.isPlaying() ||
+    //             synthOne.isPlaying() ||
+    //             synthThree.isPlaying()
+    //         ) {
+    //             if (!techno.isPlaying) {
+    //                 techno.loop();
+    //                 saveButton.html('Stop')
+    //             } else {
+    //                 techno.pause();
+    //                 playStop.html('play');
+    //                 saveLoop()
+    //                 saveButton.html('Bounce Audio')
+    //             }
+    //         } else {
+    //             console.log("Oops, please wait while sounds load...");
+    //         }
+    //     })
 
     techno = new p5.Part();
 
@@ -175,12 +202,6 @@ function setup() {
     techno.addPhrase(synthOnePhrasing);
     techno.addPhrase(synthThreePhrasing);
     techno.addPhrase('sequence', sequence, seqPattern);
-
-
-    // MASTER VOLUME SLIDER
-    masterAmpSlider = createSlider(0, 10, 0.01, 0.01);
-    masterAmpSlider.parent('masteramp-control');
-    masterAmpSlider.value(masterVolume());
 
     // SET BPM, CREATE SLIDER
     bpmControl = createSlider(80, 200, 119, 1);
@@ -226,7 +247,6 @@ function setup() {
             kPattern[indexClicked] = +!kPattern[indexClicked];
         }
 
-        
         drawGrid();
     }
 

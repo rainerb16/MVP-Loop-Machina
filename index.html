@@ -6,15 +6,9 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
-    <link rel="icon" href="/assets/drum-machine.png">
+    <link rel="icon" type="image/png" href="/assets/drum-machine.png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <script src="libraries/p5.min.js"></script>
-    <script src="libraries/p5.sound.min.js"></script>
-    <script src="libraries/quicksettings.js"></script>
-    <script src="libraries/p5.gui.js"></script>
-    <script src="js/sketch.js"></script>
-    <script src="js/functions.js"></script>
     <title>LOOP MACHINA - Techno Sequencer</title>
     </head>
 
@@ -31,13 +25,32 @@
                         <h4>BPM Control</h4>
                     </div>
                     <div id="play-button-holder"></div>
+                    <div id="save-button">
+                        
+                    </div>
                 </div>
-            </div>
-            <div id="controls-container">
-                <div id="masteramp-control">
-                    <h3>Master Volume</h3>
+                <div id="beatgrid-container">
+                    <div id="tracks">
+                        <p class="sound">HiHat</p>
+                        <p class="sound">OpenHat</p>
+                        <p class="sound">Ride</p>
+                        <p class="sound">Clap</p>
+                        <p class="sound">Perc</p>
+                        <p class="sound">Snare</p>
+                        <p class="sound">Chord</p>
+                        <p class="sound">Pluck</p>
+                        <p class="sound">Kick</p>
+                    </div>
+                    <div id="beatgrid"></div>
                 </div>
             </div>
         </div>
+        <script src="libraries/p5.min.js"></script>
+        <script src="libraries/p5.sound.min.js"></script>
+        <script src="libraries/quicksettings.js"></script>
+        <script src="libraries/p5.gui.js"></script>
+        <script src="js/sketch.js"></script>
+        <script src="js/functions.js"></script>
+        <script src="js/record.js"></script>
     </body>
 </html>

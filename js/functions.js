@@ -86,23 +86,3 @@ function playHead(beatGrid) {
 }
 
 
-
-// SETTING SPACEBAR AS PLAY BUTTON
-// function keyPressed() {
-//     if (key === " ") {
-//     if (
-//         hiHat.isLoaded() &&
-//         kick.isLoaded() &&
-//         clap.isLoaded() &&
-//         perc.isLoaded() &&
-//         snare.isLoaded()
-//     ) {
-//         if (!drums.isPlaying) {
-//             drums.loop();
-//         } else {
-//             drums.pause();
-//         }
-//     } else {
-//         console.log("Oops, please wait while sounds load...");
-//     }
-// }

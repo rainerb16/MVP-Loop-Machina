@@ -3,14 +3,10 @@ html, body {
     padding: 0;
     background-color: white;
   }
-  #top-container {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-  }
-  
+
+// IPHONE 5 SE
+@media only screen and (min-width: 320px) {
+
   #sketch-holder {
     margin-top: 2vh;
     padding-bottom: 10vh;
@@ -19,6 +15,241 @@ html, body {
     background-image: url('/assets/lights.jpg');
     background-size: 800px;
     background-position: center;
+
+    #beatgrid-container {
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+    }
+  }
+
+  #top-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  .sound {
+    text-align: right;
+    margin-top: 3.75vh;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding-right: 1px;
+    font-size: 12px;
+  }
+
+  #design-container {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10%;
+    margin-bottom: 2vh;
+
+
+  
+    #bpmControl-holder {
+      width: 100%;
+      color: red;
+      margin-left: 12.5%;
+    }
+
+    #save-button {
+      width: 100%;
+      margin-left: 50px;
+    }
+  
+    button {
+      background-color: red;
+      color: black;
+      padding: 3px;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 14px;
+      margin-top: 2vh;
+      border-radius: 5%;
+    }
+  
+    #main-title {
+      width: 75%;
+      color: black;
+      background-color: white;
+      padding: 5px;
+      border: 1px black solid;
+      border-radius: 5%;
+    }
+  
+    #loop-machina {
+      font-size: 42px;
+      text-align: center;
+    }
+  }
+
+  #techno-sequencer {
+    font-size: 22px;
+    text-align: center;
+
+    #techno {
+      color: red;
+      font-family: 'Russo One', sans-serif;
+      font-size: 22px;
+    }
+  }
+}
+
+// MOBILE - IPHONE 6/7/8
+@media only screen and (min-width: 375px) {
+  #sketch-holder {
+    margin-top: 2vh;
+    padding-bottom: 10vh;
+    border: 3px solid black;
+    padding: 20px;
+    background-image: url('/assets/lights.jpg');
+    background-size: 800px;
+    background-position: center;
+
+    #beatgrid-container {
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+    }
+  }
+
+  #top-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  .sound {
+    text-align: right;
+    margin-top: 3.25vh;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding-right: 1px;
+    font-size: 12px;
+  }
+
+  #design-container {
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    border-radius: 10%;
+    margin-bottom: 2vh;
+
+    #bpmControl-holder {
+      width: 75%;
+      color: red;
+      margin-left: 12.5%;
+    }
+
+    button {
+      background-color: red;
+      color: black;
+      padding: 3px;
+      font-family: 'Source Code Pro', monospace;
+      font-size: 14px;
+      margin-top: 2vh;
+      border-radius: 5%;
+    }
+
+    #main-title {
+      width: 75%;
+      color: black;
+      background-color: white;
+      padding: 5px;
+      border: 1px black solid;
+      border-radius: 5%;
+    }
+
+    #loop-machina {
+      font-size: 42px;
+      text-align: center;
+    }
+  }
+
+  #techno-sequencer {
+    font-size: 22px;
+    text-align: center;
+
+    #techno {
+      color: red;
+      font-family: 'Russo One', sans-serif;
+      font-size: 22px;
+    }
+  }
+}
+
+// MOBILE - IPHONE 8 PLUS
+@media only screen and (min-width: 414px) {
+
+  .sound {
+    text-align: right;
+    margin-top: 2.85vh;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding-right: 1px;
+    font-size: 12px;
+  }  
+}
+
+// TABLET
+@media only screen and (min-width: 670px) {
+
+  .sound {
+    text-align: right;
+    margin-top: 2vh;
+    color: black;
+    background-color: white;
+    border: 1px solid black;
+    padding-right: 1px;
+    font-size: 12px;
+  }
+
+}
+
+
+
+// DESKTOP
+@media only screen and (min-width: 1020px) {
+  
+  #top-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  #sketch-holder {
+    margin-top: 2vh;
+    padding-bottom: 10vh;
+    border: 3px solid black;
+    padding: 20px;
+    background-image: url('/assets/lights.jpg');
+    background-size: 800px;
+    background-position: center;
+
+    #beatgrid-container {
+      display: grid;
+      grid-template-columns: 1fr 5fr;
+
+      .sound {
+        text-align: right;
+        margin-top: 2.25vh;
+        color: black;
+        background-color: white;
+        border: 1px solid black;
+        padding-right: 1px;
+      }
+    }
 
     #design-container {
       display: grid;
@@ -53,10 +284,6 @@ html, body {
         border: 1px black solid;
         border-radius: 5%;
       }
-
-      #preset-options {
-        margin-top: 2vh;
-      }
     }
   }
 
@@ -73,4 +300,4 @@ html, body {
       font-size: 36px;
     }
   }
-  
+}
