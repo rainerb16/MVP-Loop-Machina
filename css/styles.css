@@ -59,6 +59,17 @@ html, body {
     display: grid;
     -ms-grid-columns: 1fr 5fr;
         grid-template-columns: 1fr 5fr;
+    -webkit-column-gap: 5px;
+            column-gap: 5px;
+  }
+  #sketch-holder #beatgrid-container #beatgrid {
+    margin-right: 5vw;
+  }
+  #sketch-holder table#tracks {
+    border-collapse: separate;
+    border-spacing: 0 17px;
+    text-align: right;
+    color: #FF08AD;
   }
   #sketch-holder #volume-sliders-container {
     display: -ms-grid;
@@ -163,15 +174,6 @@ html, body {
     font-family: 'Russo One', sans-serif;
     font-size: 22px;
   }
-  .sound {
-    text-align: right;
-    margin-top: 2vh;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-    padding-right: 1px;
-    font-size: 12px;
-  }
   #footer-container {
     margin: 5vh;
   }
@@ -194,7 +196,7 @@ html, body {
     font-family: 'Source Code Pro', monospace;
   }
   #sketch-holder {
-    margin-top: 2vh;
+    margin: 2vh 0vh 2vh 0vh;
     padding-bottom: 10vh;
     border: 3px solid black;
     padding: 20px;
@@ -208,9 +210,7 @@ html, body {
   #sketch-holder #beatgrid-container .sound {
     text-align: right;
     margin-top: 2.45vh;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
+    color: #FF08AD;
     padding-right: 1px;
   }
   #sketch-holder #design-container {

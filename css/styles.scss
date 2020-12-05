@@ -61,6 +61,18 @@ html, body {
     #beatgrid-container {
       display: grid;
       grid-template-columns: 1fr 5fr;
+      column-gap: 5px;
+
+      #beatgrid {
+        margin-right: 5vw;
+      }
+    }
+
+    table#tracks {
+      border-collapse: separate;
+      border-spacing: 0 17px;
+      text-align: right;
+      color: #FF08AD;
     }
 
     #volume-sliders-container {
@@ -174,15 +186,13 @@ html, body {
   }
 
 
-  .sound {
-    text-align: right;
-    margin-top: 2vh;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-    padding-right: 1px;
-    font-size: 12px;
-  }
+  // .sound {
+  //   text-align: right;
+  //   margin-top: 2vh;
+  //   color: #FF08AD;
+  //   padding-right: 1px;
+  //   font-size: 12px;
+  // }
 
   #footer-container {
     margin: 5vh;
@@ -209,7 +219,7 @@ html, body {
   }
 
   #sketch-holder {
-    margin-top: 2vh;
+    margin: 2vh 0vh 2vh 0vh;
     padding-bottom: 10vh;
     border: 3px solid black;
     padding: 20px;
@@ -221,9 +231,7 @@ html, body {
       .sound {
         text-align: right;
         margin-top: 2.45vh;
-        color: black;
-        background-color: white;
-        border: 1px solid black;
+        color: #FF08AD;
         padding-right: 1px;
       }
     }
