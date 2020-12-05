@@ -51,74 +51,125 @@ html, body {
     }
 
     #sketch-holder {
-        margin: 2vh 0vh 2vh 0vh;
-        padding-bottom: 10vh;
+        margin: 2vh 0vh 0vh 0vh;
+        padding-bottom: 5vh;
         border: 3px solid white;
-        padding: 20px;
         background-color: black;
         color: white;
 
+
         #beatgrid-container {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-        column-gap: 5px;
+            display: grid;
+            grid-template-columns: 4fr 1fr 6fr 4fr;
+            margin-bottom: 3vh;
 
-        #beatgrid {
-            margin-right: 5vw;
-        }
-        }
-
-        table#tracks {
-        border-collapse: separate;
-        border-spacing: 0 17px;
-        text-align: right;
-        color: #FF08AD;
+            table#tracks {
+                border-collapse: separate;
+                border-spacing: 0 17px;
+                text-align: right;
+                color: #FF08AD;
+                width: 25%;
+            }
         }
 
         #volume-sliders-container {
-        display: grid;
-        align-items: center;
-        justify-items: center;
-        grid-template-columns: 2fr 2fr 2fr;
-        color: white;
+            display: grid;
+            align-items: center;
+            justify-items: center;
+            grid-template-columns: repeat(9, 0.5fr);
+            color: white;
+            margin-left: 3vw;
+        }
+
+        #hihat,
+        #openhat,
+        #ride,
+        #clap,
+        #perc,
+        #snare,
+        #synthOne,
+        #synthThree,
+        #kick {
+            transform: rotate(-90deg);
+            padding-bottom: 40px;
+        }
 
         #hihat {
             color: #04E762;
+
+            .slider {
+                transform: rotate(90deg);;
+            }
         }
 
         #openhat {
             color: #F5B700;
+
+            .slider {
+                transform: rotate(90deg);
+            }
         }
 
         #ride {
             color: #DC0073;
+
+            .slider {
+                transform: rotate(90deg);
+            }
         }
 
         #clap {
-            color: #008BF8;
+            color: #008BF8;;
+
+            .slider {
+                transform: rotate(90deg);
+            }
         }
 
         #perc {
             color: #E6FF00;
+
+            .slider {
+                transform: rotate(90deg);
+            }
         }
 
         #snare {
             color: #0606FF;
+
+            .slider {
+                transform: rotate(90deg);
+            }
         }
 
         #synthOne {
             color: #B700FF;
+
+            .slider {
+                transform: rotate(90deg);
+            }
         }
 
         #synthThree {
             color: #FF08AD;
+
+            .slider {
+                transform: rotate(90deg);
+            }
         }
 
         #kick {
             color: #FE8C12;
+
+            .slider {
+                transform: rotate(90deg);
+            }
         }
     }
-}
+
+    #volume-control {
+        margin: 5vh;
+    }
 
     #top-container {
         display: grid;
@@ -172,7 +223,7 @@ html, body {
             font-size: 42px;
             text-align: center;
         }
-  }
+    }
 
     #techno-sequencer {
         font-size: 22px;
@@ -214,33 +265,26 @@ html, body {
         margin: 2vh 0vh 2vh 0vh;
         padding-bottom: 10vh;
         border: 3px solid black;
-        padding: 20px;
 
         #beatgrid-container {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
-
-            .sound {
-                text-align: right;
-                margin-top: 2.45vh;
-                color: #FF08AD;
-                padding-right: 1px;
-            }
+            display: grid;
+            grid-template-columns: 4fr 1fr 6fr 4fr;
+            margin-bottom: 3vh;
         }
 
         #design-container {
-        display: grid;
-        grid-template-columns: 3fr 5fr;
-        width: 100%;
-        align-items: center;
-        justify-items: center;
-        border-radius: 10%;
-        margin-bottom: 2vh;
+            display: grid;
+            grid-template-columns: 3fr 5fr;
+            width: 100%;
+            align-items: center;
+            justify-items: center;
+            border-radius: 10%;
+            margin-bottom: 2vh;
 
-            #bpmControl-holder {
+            #bpmControl-holder, #masterVolControl-holder {
                 width: 75%;
                 color: white;
-                margin-left: 12.5%;
+                margin-left: 25%;
             }
 
             button {

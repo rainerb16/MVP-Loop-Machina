@@ -47,29 +47,25 @@ html, body {
     display: none;
   }
   #sketch-holder {
-    margin: 2vh 0vh 2vh 0vh;
-    padding-bottom: 10vh;
+    margin: 2vh 0vh 0vh 0vh;
+    padding-bottom: 5vh;
     border: 3px solid white;
-    padding: 20px;
     background-color: black;
     color: white;
   }
   #sketch-holder #beatgrid-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 5fr;
-        grid-template-columns: 1fr 5fr;
-    -webkit-column-gap: 5px;
-            column-gap: 5px;
+    -ms-grid-columns: 4fr 1fr 6fr 4fr;
+        grid-template-columns: 4fr 1fr 6fr 4fr;
+    margin-bottom: 3vh;
   }
-  #sketch-holder #beatgrid-container #beatgrid {
-    margin-right: 5vw;
-  }
-  #sketch-holder table#tracks {
+  #sketch-holder #beatgrid-container table#tracks {
     border-collapse: separate;
     border-spacing: 0 17px;
     text-align: right;
     color: #FF08AD;
+    width: 25%;
   }
   #sketch-holder #volume-sliders-container {
     display: -ms-grid;
@@ -78,36 +74,89 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
     justify-items: center;
-    -ms-grid-columns: 2fr 2fr 2fr;
-        grid-template-columns: 2fr 2fr 2fr;
+    -ms-grid-columns: (0.5fr)[9];
+        grid-template-columns: repeat(9, 0.5fr);
     color: white;
+    margin-left: 3vw;
   }
-  #sketch-holder #volume-sliders-container #hihat {
+  #sketch-holder #hihat,
+  #sketch-holder #openhat,
+  #sketch-holder #ride,
+  #sketch-holder #clap,
+  #sketch-holder #perc,
+  #sketch-holder #snare,
+  #sketch-holder #synthOne,
+  #sketch-holder #synthThree,
+  #sketch-holder #kick {
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    padding-bottom: 40px;
+  }
+  #sketch-holder #hihat {
     color: #04E762;
   }
-  #sketch-holder #volume-sliders-container #openhat {
+  #sketch-holder #hihat .slider {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #sketch-holder #openhat {
     color: #F5B700;
   }
-  #sketch-holder #volume-sliders-container #ride {
+  #sketch-holder #openhat .slider {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #sketch-holder #ride {
     color: #DC0073;
   }
-  #sketch-holder #volume-sliders-container #clap {
+  #sketch-holder #ride .slider {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #sketch-holder #clap {
     color: #008BF8;
   }
-  #sketch-holder #volume-sliders-container #perc {
+  #sketch-holder #clap .slider {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #sketch-holder #perc {
     color: #E6FF00;
   }
-  #sketch-holder #volume-sliders-container #snare {
+  #sketch-holder #perc .slider {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #sketch-holder #snare {
     color: #0606FF;
   }
-  #sketch-holder #volume-sliders-container #synthOne {
+  #sketch-holder #snare .slider {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #sketch-holder #synthOne {
     color: #B700FF;
   }
-  #sketch-holder #volume-sliders-container #synthThree {
+  #sketch-holder #synthOne .slider {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #sketch-holder #synthThree {
     color: #FF08AD;
   }
-  #sketch-holder #volume-sliders-container #kick {
+  #sketch-holder #synthThree .slider {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #sketch-holder #kick {
     color: #FE8C12;
+  }
+  #sketch-holder #kick .slider {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  #volume-control {
+    margin: 5vh;
   }
   #top-container {
     display: -ms-grid;
@@ -199,19 +248,13 @@ html, body {
     margin: 2vh 0vh 2vh 0vh;
     padding-bottom: 10vh;
     border: 3px solid black;
-    padding: 20px;
   }
   #sketch-holder #beatgrid-container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 5fr;
-        grid-template-columns: 1fr 5fr;
-  }
-  #sketch-holder #beatgrid-container .sound {
-    text-align: right;
-    margin-top: 2.45vh;
-    color: #FF08AD;
-    padding-right: 1px;
+    -ms-grid-columns: 4fr 1fr 6fr 4fr;
+        grid-template-columns: 4fr 1fr 6fr 4fr;
+    margin-bottom: 3vh;
   }
   #sketch-holder #design-container {
     display: -ms-grid;
@@ -226,10 +269,10 @@ html, body {
     border-radius: 10%;
     margin-bottom: 2vh;
   }
-  #sketch-holder #design-container #bpmControl-holder {
+  #sketch-holder #design-container #bpmControl-holder, #sketch-holder #design-container #masterVolControl-holder {
     width: 75%;
     color: white;
-    margin-left: 12.5%;
+    margin-left: 25%;
   }
   #sketch-holder #design-container button {
     background-color: #FF08AD;
