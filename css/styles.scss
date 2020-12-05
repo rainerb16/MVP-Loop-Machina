@@ -4,8 +4,8 @@ html, body {
     background-color: whitesmoke;
   }
 
-  // MOBILE
-  #mobile-container {
+// MOBILE
+#mobile-container {
     display: block;
     text-align: center;
     justify-content: center;
@@ -15,188 +15,180 @@ html, body {
     line-height: 5vh;
     font-family: 'Source Code Pro', monospace;
     color: black;
-  }
+}
 
-  #top-container {
+#top-container {
     display: none;
-  }
+}
 
 
 // TABLET
 @media only screen and (min-width: 670px) {
 
-  a {
-    border-bottom: 1px solid black;
-    color: #FF08AD;
-    padding-bottom: .5em;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
-    background-position: bottom;
-    background-repeat: repeat-x;
-    background-size: 20%;
-    border-bottom: 0;
-    padding-bottom: .3em;
-    text-decoration: none;
-  }
-
-  #top-container {
-    display: contents;
-  }
-
-  #mobile-container {
-    display: none;
-  }
-
-  #sketch-holder {
-    margin: 2vh 0vh 2vh 0vh;
-    padding-bottom: 10vh;
-    border: 3px solid white;
-    padding: 20px;
-    background-color: black;
-    color: white;
-
-    #beatgrid-container {
-      display: grid;
-      grid-template-columns: 1fr 5fr;
-      column-gap: 5px;
-
-      #beatgrid {
-        margin-right: 5vw;
-      }
-    }
-
-    table#tracks {
-      border-collapse: separate;
-      border-spacing: 0 17px;
-      text-align: right;
-      color: #FF08AD;
-    }
-
-    #volume-sliders-container {
-      display: grid;
-      align-items: center;
-      justify-items: center;
-      grid-template-columns: 2fr 2fr 2fr;
-      color: white;
-
-      #hihat {
-        color: #04E762;
-      }
-
-      #openhat {
-        color: #F5B700;
-      }
-
-      #ride {
-        color: #DC0073;
-      }
-
-      #clap {
-        color: #008BF8;
-      }
-
-      #perc {
-        color: #E6FF00;
-      }
-
-      #snare {
-        color: #0606FF;
-      }
-
-      #synthOne {
-        color: #B700FF;
-      }
-
-      #synthThree {
+    a {
+        border-bottom: 1px solid black;
         color: #FF08AD;
-      }
-
-      #kick {
-        color: #FE8C12;
-      }
+        padding-bottom: .5em;
+        text-decoration: none;
     }
+  
+    a:hover {
+        background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
+        background-position: bottom;
+        background-repeat: repeat-x;
+        background-size: 20%;
+        border-bottom: 0;
+        padding-bottom: .3em;
+        text-decoration: none;
+    }
+
+    #top-container {
+        display: contents;
+    }
+
+    #mobile-container {
+        display: none;
+    }
+
+    #sketch-holder {
+        margin: 2vh 0vh 2vh 0vh;
+        padding-bottom: 10vh;
+        border: 3px solid white;
+        padding: 20px;
+        background-color: black;
+        color: white;
+
+        #beatgrid-container {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+        column-gap: 5px;
+
+        #beatgrid {
+            margin-right: 5vw;
+        }
+        }
+
+        table#tracks {
+        border-collapse: separate;
+        border-spacing: 0 17px;
+        text-align: right;
+        color: #FF08AD;
+        }
+
+        #volume-sliders-container {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 2fr 2fr 2fr;
+        color: white;
+
+        #hihat {
+            color: #04E762;
+        }
+
+        #openhat {
+            color: #F5B700;
+        }
+
+        #ride {
+            color: #DC0073;
+        }
+
+        #clap {
+            color: #008BF8;
+        }
+
+        #perc {
+            color: #E6FF00;
+        }
+
+        #snare {
+            color: #0606FF;
+        }
+
+        #synthOne {
+            color: #B700FF;
+        }
+
+        #synthThree {
+            color: #FF08AD;
+        }
+
+        #kick {
+            color: #FE8C12;
+        }
+    }
+}
+
+    #top-container {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+        font-family: 'Source Code Pro', monospace;
+    }
+
+    #design-container {
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        border-radius: 10%;
+        margin-bottom: 2vh;
+
+        #bpmControl-holder, #masterVolControl-holder {
+        width: 75%;
+        color: whitesmoke;
+        margin-left: 12.5%;
+        }
+
+        button {
+            background-color: #FF08AD;
+            color: black;
+            padding: 3px;
+            font-family: 'Source Code Pro', monospace;
+            font-size: 14px;
+            margin-top: 2vh;
+            border-radius: 5%;
+            transform: perspective(1px) translateZ(0);
+            cursor: pointer;
+        }
+
+        button:hover {
+            box-shadow: 2px 4px 4px #ff88d7;
+        }
+
+        #main-title {
+            width: 75%;
+            color: black;
+            background-color: white;
+            padding: 5px;
+            border: 1px black solid;
+            border-radius: 5%;
+        }
+
+        #loop-machina {
+            font-size: 42px;
+            text-align: center;
+        }
   }
 
-  #top-container {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-  }
+    #techno-sequencer {
+        font-size: 22px;
+        text-align: center;
 
-  #design-container {
-    display: grid;
-    grid-template-columns: 3fr 5fr;
-    width: 100%;
-    align-items: center;
-    justify-items: center;
-    border-radius: 10%;
-    margin-bottom: 2vh;
-
-    #bpmControl-holder, #masterVolControl-holder {
-      width: 75%;
-      color: whitesmoke;
-      margin-left: 12.5%;
+        #techno {
+            color: #FF08AD;
+            font-family: 'Russo One', sans-serif;
+            font-size: 22px;
+        }
     }
 
-    button {
-      background-color: #FF08AD;
-      color: black;
-      padding: 3px;
-      font-family: 'Source Code Pro', monospace;
-      font-size: 14px;
-      margin-top: 2vh;
-      border-radius: 5%;
-      transform: perspective(1px) translateZ(0);
-      cursor: pointer;
+
+    #footer-container {
+        margin: 5vh;
     }
-
-    button:hover {
-      box-shadow: 2px 4px 4px #ff88d7;
-    }
-
-    #main-title {
-      width: 75%;
-      color: black;
-      background-color: white;
-      padding: 5px;
-      border: 1px black solid;
-      border-radius: 5%;
-    }
-
-    #loop-machina {
-      font-size: 42px;
-      text-align: center;
-    }
-  }
-
-  #techno-sequencer {
-    font-size: 22px;
-    text-align: center;
-
-    #techno {
-      color: #FF08AD;
-      font-family: 'Russo One', sans-serif;
-      font-size: 22px;
-    }
-  }
-
-
-  // .sound {
-  //   text-align: right;
-  //   margin-top: 2vh;
-  //   color: #FF08AD;
-  //   padding-right: 1px;
-  //   font-size: 12px;
-  // }
-
-  #footer-container {
-    margin: 5vh;
-  }
 }
 
 
@@ -204,85 +196,85 @@ html, body {
 // DESKTOP
 @media only screen and (min-width: 1020px) {
   
-  article {
-    width: 75%;
-    margin-left: 12.5%;
-    text-align: justify;
-  }
-
-  #top-container {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-  }
-
-  #sketch-holder {
-    margin: 2vh 0vh 2vh 0vh;
-    padding-bottom: 10vh;
-    border: 3px solid black;
-    padding: 20px;
-
-    #beatgrid-container {
-      display: grid;
-      grid-template-columns: 1fr 5fr;
-
-      .sound {
-        text-align: right;
-        margin-top: 2.45vh;
-        color: #FF08AD;
-        padding-right: 1px;
-      }
-    }
-
-    #design-container {
-      display: grid;
-      grid-template-columns: 3fr 5fr;
-      width: 100%;
-      align-items: center;
-      justify-items: center;
-      border-radius: 10%;
-      margin-bottom: 2vh;
-
-      #bpmControl-holder {
+    article {
         width: 75%;
-        color: white;
         margin-left: 12.5%;
-      }
+        text-align: justify;
+    }
 
-      button {
-        background-color: #FF08AD;
-        color: black;
-        padding: 3px;
+    #top-container {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
         font-family: 'Source Code Pro', monospace;
-        font-size: 14px;
-        margin-top: 2vh;
-        border-radius: 5%;
-      }
-
-      #main-title {
-        width: 75%;
-        color: black;
-        background-color: white;
-        padding: 5px;
-        border: 1px black solid;
-        border-radius: 5%;
-      }
     }
-  }
 
-  #loop-machina {
-    font-size: 42px;
-  }
+    #sketch-holder {
+        margin: 2vh 0vh 2vh 0vh;
+        padding-bottom: 10vh;
+        border: 3px solid black;
+        padding: 20px;
 
-  #techno-sequencer {
-    font-size: 36px;
+        #beatgrid-container {
+        display: grid;
+        grid-template-columns: 1fr 5fr;
 
-    #techno {
-      color: #FF08AD;
-      font-family: 'Russo One', sans-serif;
-      font-size: 36px;
+            .sound {
+                text-align: right;
+                margin-top: 2.45vh;
+                color: #FF08AD;
+                padding-right: 1px;
+            }
+        }
+
+        #design-container {
+        display: grid;
+        grid-template-columns: 3fr 5fr;
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        border-radius: 10%;
+        margin-bottom: 2vh;
+
+            #bpmControl-holder {
+                width: 75%;
+                color: white;
+                margin-left: 12.5%;
+            }
+
+            button {
+                background-color: #FF08AD;
+                color: black;
+                padding: 3px;
+                font-family: 'Source Code Pro', monospace;
+                font-size: 14px;
+                margin-top: 2vh;
+                border-radius: 5%;
+            }
+
+            #main-title {
+                width: 75%;
+                color: black;
+                background-color: white;
+                padding: 5px;
+                border: 1px black solid;
+                border-radius: 5%;
+            }
+        }
     }
-  }
+
+    #loop-machina {
+        font-size: 42px;
+    }
+
+    #techno-sequencer {
+        font-size: 36px;
+
+        #techno {
+        color: #FF08AD;
+        font-family: 'Russo One', sans-serif;
+        font-size: 36px;
+        }
+    }
 }
