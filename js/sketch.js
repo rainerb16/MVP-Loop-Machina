@@ -12,6 +12,7 @@ let mousePressed;
 let seqPattern;
 let playPosition;
 let playButton;
+let hhVol;
 
 // ClICK ANYWHERE TO START AUDIO AS PER GOOGLE AUTOPLAY POLICY
 function mouseClicked() {
@@ -32,6 +33,27 @@ function setup() {
     })
     masterVolSlider.parent('masterVolControl-holder');
     
+    // CREATE SLIDER FOR EACH SOUND
+    hiHatSlider = createSlider(0, 1, 0.1, 0.1);
+    kickSlider = createSlider(0, 1, 0.1, 0.1);
+    clapSlider = createSlider(0, 1, 0.1, 0.1);
+    percSlider = createSlider(0, 1, 0.1, 0.1);
+    snareSlider = createSlider(0, 1, 0.1, 0.1);
+    openHatSlider = createSlider(0, 1, 0.1, 0.1);
+    rideSlider = createSlider(0, 1, 0.1, 0.1);
+    synthOneSlider = createSlider(0, 1, 0.1, 0.1);
+    synthThreeSlider = createSlider(0, 1, 0.1, 0.1);
+
+    hiHatSlider.parent('hihat-slider');
+    openHatSlider.parent('openhat-slider');
+    rideSlider.parent('ride-slider');
+    clapSlider.parent('clap-slider');
+    percSlider.parent('perc-slider');
+    snareSlider.parent('snare-slider');
+    synthOneSlider.parent('synthOne-slider');
+    synthThreeSlider.parent('synthThree-slider');
+    kickSlider.parent('kick-slider');
+
     // BEAT GRID
     beatGrid = 16;
 
@@ -51,7 +73,7 @@ function setup() {
     ride = loadSound("assets/hi_hats/006Ride.wav", () => {});
     synthOne = loadSound("assets/synths/synth_one.wav", () => {});
     synthThree = loadSound("assets/synths/synth_three.wav", () => {});
-    
+
     // SOUND PATTERNS
     hhPattern = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
     kPattern = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
@@ -165,34 +187,6 @@ function setup() {
         })
     
 
-    // saveButton = createButton('Bounce Audio')
-    // saveButton.parent('save-button')
-    //     .mouseClicked(() => {
-    //         if (
-    //             hiHat.isPlaying() ||
-    //             kick.isPlaying() ||
-    //             clap.isPlaying() ||
-    //             perc.isPlaying() ||
-    //             snare.isPlaying() ||
-    //             openHat.isPlaying() ||
-    //             ride.isPlaying() ||
-    //             synthOne.isPlaying() ||
-    //             synthThree.isPlaying()
-    //         ) {
-    //             if (!techno.isPlaying) {
-    //                 techno.loop();
-    //                 saveButton.html('Stop')
-    //             } else {
-    //                 techno.pause();
-    //                 playStop.html('play');
-    //                 saveLoop()
-    //                 saveButton.html('Bounce Audio')
-    //             }
-    //         } else {
-    //             console.log("Oops, please wait while sounds load...");
-    //         }
-    //     })
-
     techno = new p5.Part();
     techno.amp = .1;
 
@@ -219,40 +213,56 @@ function setup() {
     drawGrid();
 }
 
-    function canvasPressed() {
-        let rowClicked = floor((9 * mouseY) / height);
-        let indexClicked = floor((16 * mouseX) / width);
+// CONTROL VOL SLIDER FOR EACH SOUND
+function draw() {
+    hiHat.setVolume(hiHatSlider.value());
+    openHat.setVolume(openHatSlider.value());
+    ride.setVolume(rideSlider.value());
+    clap.setVolume(clapSlider.value()); 
+    perc.setVolume(percSlider.value());
+    snare.setVolume(snareSlider.value());
+    synthOne.setVolume(synthOneSlider.value());
+    synthThree.setVolume(synthThreeSlider.value());
+    kick.setVolume(kickSlider.value());
 
-        if (rowClicked === 0) {
-            hhPattern[indexClicked] = +!hhPattern[indexClicked];
+}
 
-        } else if (rowClicked === 1) {
-            openHatPattern[indexClicked] = +!openHatPattern[indexClicked];
-        
-        } else if (rowClicked === 2) {
-            ridePattern[indexClicked] = +!ridePattern[indexClicked];
 
-        } else if (rowClicked === 3) {
-            clapPattern[indexClicked] = +!clapPattern[indexClicked];
- 
-        } else if (rowClicked === 4) {
-            percPattern[indexClicked] = +!percPattern[indexClicked];
+// CODE NEEDS TO BE LEFT HERE
+function canvasPressed() {
+    let rowClicked = floor((9 * mouseY) / height);
+    let indexClicked = floor((16 * mouseX) / width);
 
-        } else if (rowClicked === 5) {
-            snarePattern[indexClicked] = +!snarePattern[indexClicked];
+    if (rowClicked === 0) {
+        hhPattern[indexClicked] = +!hhPattern[indexClicked];
 
-        } else if (rowClicked === 6) {
-            synthOnePattern[indexClicked] = +!synthOnePattern[indexClicked];
+    } else if (rowClicked === 1) {
+        openHatPattern[indexClicked] = +!openHatPattern[indexClicked];
+    
+    } else if (rowClicked === 2) {
+        ridePattern[indexClicked] = +!ridePattern[indexClicked];
 
-        } else if (rowClicked === 7) {
-            synthThreePattern[indexClicked] = +!synthThreePattern[indexClicked];
+    } else if (rowClicked === 3) {
+        clapPattern[indexClicked] = +!clapPattern[indexClicked];
 
-        } else if (rowClicked === 8) {
-            kPattern[indexClicked] = +!kPattern[indexClicked];
-        }
+    } else if (rowClicked === 4) {
+        percPattern[indexClicked] = +!percPattern[indexClicked];
 
-        drawGrid();
+    } else if (rowClicked === 5) {
+        snarePattern[indexClicked] = +!snarePattern[indexClicked];
+
+    } else if (rowClicked === 6) {
+        synthOnePattern[indexClicked] = +!synthOnePattern[indexClicked];
+
+    } else if (rowClicked === 7) {
+        synthThreePattern[indexClicked] = +!synthThreePattern[indexClicked];
+
+    } else if (rowClicked === 8) {
+        kPattern[indexClicked] = +!kPattern[indexClicked];
     }
+
+    drawGrid();
+}
 
 
     

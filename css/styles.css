@@ -1,33 +1,75 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: white;
+  background-color: #cfcdcd;
 }
 
-@media only screen and (min-width: 320px) {
-  article {
-    width: 85%;
-    margin-left: 7.5%;
-    text-align: justify;
+#mobile-container {
+  display: block;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30vh 5vw 0vh 5vw;
+  font-size: 18px;
+  line-height: 5vh;
+  font-family: 'Source Code Pro', monospace;
+  color: black;
+}
+
+#top-container {
+  display: none;
+}
+
+@media only screen and (min-width: 670px) {
+  a {
+    border-bottom: 1px solid black;
+    color: red;
+    padding-bottom: .5em;
+    text-decoration: none;
   }
-  #info-wrapper {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+  a:hover {
+    background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/squiggle.svg");
+    background-position: bottom;
+    background-repeat: repeat-x;
+    background-size: 20%;
+    border-bottom: 0;
+    padding-bottom: .3em;
+    text-decoration: none;
+  }
+  #top-container {
+    display: contents;
+  }
+  #mobile-container {
+    display: none;
   }
   #sketch-holder {
-    margin-top: 2vh;
+    margin: 2vh 0vh 2vh 0vh;
     padding-bottom: 10vh;
-    border: 3px solid black;
+    border: 3px solid white;
     padding: 20px;
-    background-image: url("/assets/lights.jpg");
-    background-size: 800px;
-    background-position: center;
+    background-color: black;
+    color: white;
   }
   #sketch-holder #beatgrid-container {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 5fr;
         grid-template-columns: 1fr 5fr;
+  }
+  #sketch-holder #volume-sliders-container {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -ms-grid-columns: 2fr 2fr 2fr;
+        grid-template-columns: 2fr 2fr 2fr;
+    color: white;
   }
   #top-container {
     display: -ms-grid;
@@ -38,104 +80,6 @@ html, body {
     justify-items: center;
     text-align: center;
     font-family: 'Source Code Pro', monospace;
-  }
-  .sound {
-    text-align: right;
-    margin-top: 3.6vh;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-    padding-right: 1px;
-    font-size: 12px;
-  }
-  #design-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 3fr 3fr;
-        grid-template-columns: 3fr 3fr;
-    width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
-    border-radius: 10%;
-    margin-bottom: 2vh;
-  }
-  #design-container #bpmControl-holder, #design-container #masterVolControl-holder {
-    width: 100%;
-    color: red;
-    margin-left: 12.5%;
-  }
-  #design-container #save-button {
-    width: 100%;
-    margin-left: 50px;
-  }
-  #design-container button {
-    background-color: red;
-    color: black;
-    padding: 3px;
-    font-family: 'Source Code Pro', monospace;
-    font-size: 14px;
-    margin-top: 2vh;
-    border-radius: 5%;
-  }
-  #design-container #main-title {
-    width: 75%;
-    color: black;
-    background-color: white;
-    padding: 5px;
-    border: 1px black solid;
-    border-radius: 5%;
-  }
-  #design-container #loop-machina {
-    font-size: 42px;
-    text-align: center;
-  }
-  #techno-sequencer {
-    font-size: 22px;
-    text-align: center;
-  }
-  #techno-sequencer #techno {
-    color: red;
-    font-family: 'Russo One', sans-serif;
-    font-size: 22px;
-  }
-}
-
-@media only screen and (min-width: 375px) {
-  #sketch-holder {
-    margin-top: 2vh;
-    padding-bottom: 10vh;
-    border: 3px solid black;
-    padding: 20px;
-    background-image: url("/assets/lights.jpg");
-    background-size: 800px;
-    background-position: center;
-  }
-  #sketch-holder #beatgrid-container {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 5fr;
-        grid-template-columns: 1fr 5fr;
-  }
-  #top-container {
-    display: -ms-grid;
-    display: grid;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
-    text-align: center;
-    font-family: 'Source Code Pro', monospace;
-  }
-  .sound {
-    text-align: right;
-    margin-top: 3.2vh;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-    padding-right: 1px;
-    font-size: 12px;
   }
   #design-container {
     display: -ms-grid;
@@ -150,13 +94,13 @@ html, body {
     border-radius: 10%;
     margin-bottom: 2vh;
   }
-  #design-container #bpmControl-holder {
+  #design-container #bpmControl-holder, #design-container #masterVolControl-holder {
     width: 75%;
-    color: red;
+    color: whitesmoke;
     margin-left: 12.5%;
   }
   #design-container button {
-    background-color: red;
+    background-color: whitesmoke;
     color: black;
     padding: 3px;
     font-family: 'Source Code Pro', monospace;
@@ -185,21 +129,6 @@ html, body {
     font-family: 'Russo One', sans-serif;
     font-size: 22px;
   }
-}
-
-@media only screen and (min-width: 414px) {
-  .sound {
-    text-align: right;
-    margin-top: 2.85vh;
-    color: black;
-    background-color: white;
-    border: 1px solid black;
-    padding-right: 1px;
-    font-size: 12px;
-  }
-}
-
-@media only screen and (min-width: 670px) {
   .sound {
     text-align: right;
     margin-top: 2vh;
@@ -208,6 +137,9 @@ html, body {
     border: 1px solid black;
     padding-right: 1px;
     font-size: 12px;
+  }
+  #footer-container {
+    margin: 5vh;
   }
 }
 
@@ -232,9 +164,6 @@ html, body {
     padding-bottom: 10vh;
     border: 3px solid black;
     padding: 20px;
-    background-image: url("/assets/lights.jpg");
-    background-size: 800px;
-    background-position: center;
   }
   #sketch-holder #beatgrid-container {
     display: -ms-grid;
@@ -244,7 +173,7 @@ html, body {
   }
   #sketch-holder #beatgrid-container .sound {
     text-align: right;
-    margin-top: 2vh;
+    margin-top: 2.45vh;
     color: black;
     background-color: white;
     border: 1px solid black;

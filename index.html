@@ -14,6 +14,9 @@
     </head>
 
     <body>
+        <div id="mobile-container">
+            <h2 id="sorry-message">Sorry friends! Please use an iPad or Desktop computer to make beats!</h2>
+        </div>
         <div id="top-container">
             <div id="header-content">
                 <h1 id="loop-machina" class="animate__animated animate__fadeIn">LOOP MACHINA</h1>
@@ -29,9 +32,7 @@
                     <div id="bpmControl-holder">
                         <h4>BPM Control</h4>
                     </div>
-                    <div id="save-button">
-                        
-                    </div>
+                    <div id="save-button"></div>
                 </div>
                 <div id="beatgrid-container">
                     <div id="tracks">
@@ -46,6 +47,45 @@
                         <p class="sound">Kick</p>
                     </div>
                     <div id="beatgrid"></div>
+                </div>
+                <h3>VOLUME CONTROL</h3>
+                <div id="volume-sliders-container">
+                    <div id="hihat">
+                        <p>HiHat</p>
+                        <div id="hihat-slider"></div>
+                    </div>
+                    <div id="openhat">
+                        <p>OpenHat</p>
+                        <div id="openhat-slider"></div>
+                    </div>
+                    <div id="ride">
+                        <p>Ride</p>
+                        <div id="ride-slider"></div>
+                    </div>
+                    <div id="clap">
+                        <p>Clap</p>
+                        <div id="clap-slider"></div>
+                    </div>
+                    <div id="perc">
+                        <p>Perc</p>
+                        <div id="perc-slider"></div>
+                    </div>
+                    <div id="snare">
+                        <p>Snare</p>
+                        <div id="snare-slider"></div>
+                    </div>
+                    <div id="synthOne">
+                        <p>Synth</p>
+                        <div id="synthOne-slider"></div>
+                    </div>
+                    <div id="synthThree">
+                        <p>Pluck</p>
+                        <div id="synthThree-slider"></div>
+                    </div>
+                    <div id="kick">
+                        <p>Kick</p>
+                        <div id="kick-slider"></div>
+                    </div>
                 </div>
             </div>
             <div id="bottom-container" class="animate__animated animate__fadeIn animate__delay-2s">
@@ -64,7 +104,9 @@
 
                     </article>
                 </div>
-                <div class="info-wrapper"></div>
+                <div id="footer-container">
+                    <p>Created with Techno and love by <a href="https://rainerb.ml/" target="_blank">Rainer B</a></p>
+                </div>
             </div>
         </div>
         <script src="libraries/p5.min.js"></script>
