@@ -224,7 +224,7 @@ function draw() {
     synthOne.setVolume(synthOneSlider.value());
     synthThree.setVolume(synthThreeSlider.value());
     kick.setVolume(kickSlider.value());
-
+    
 }
 
 

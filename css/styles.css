@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background-color: #cfcdcd;
+  background-color: whitesmoke;
 }
 
 #mobile-container {
@@ -27,7 +27,7 @@ html, body {
 @media only screen and (min-width: 670px) {
   a {
     border-bottom: 1px solid black;
-    color: red;
+    color: #FF08AD;
     padding-bottom: .5em;
     text-decoration: none;
   }
@@ -71,6 +71,33 @@ html, body {
         grid-template-columns: 2fr 2fr 2fr;
     color: white;
   }
+  #sketch-holder #volume-sliders-container #hihat {
+    color: #04E762;
+  }
+  #sketch-holder #volume-sliders-container #openhat {
+    color: #F5B700;
+  }
+  #sketch-holder #volume-sliders-container #ride {
+    color: #DC0073;
+  }
+  #sketch-holder #volume-sliders-container #clap {
+    color: #008BF8;
+  }
+  #sketch-holder #volume-sliders-container #perc {
+    color: #E6FF00;
+  }
+  #sketch-holder #volume-sliders-container #snare {
+    color: #0606FF;
+  }
+  #sketch-holder #volume-sliders-container #synthOne {
+    color: #B700FF;
+  }
+  #sketch-holder #volume-sliders-container #synthThree {
+    color: #FF08AD;
+  }
+  #sketch-holder #volume-sliders-container #kick {
+    color: #FE8C12;
+  }
   #top-container {
     display: -ms-grid;
     display: grid;
@@ -100,13 +127,20 @@ html, body {
     margin-left: 12.5%;
   }
   #design-container button {
-    background-color: whitesmoke;
+    background-color: #FF08AD;
     color: black;
     padding: 3px;
     font-family: 'Source Code Pro', monospace;
     font-size: 14px;
     margin-top: 2vh;
     border-radius: 5%;
+    -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+    cursor: pointer;
+  }
+  #design-container button:hover {
+    -webkit-box-shadow: 2px 4px 4px #ff88d7;
+            box-shadow: 2px 4px 4px #ff88d7;
   }
   #design-container #main-title {
     width: 75%;
@@ -125,7 +159,7 @@ html, body {
     text-align: center;
   }
   #techno-sequencer #techno {
-    color: red;
+    color: #FF08AD;
     font-family: 'Russo One', sans-serif;
     font-size: 22px;
   }
@@ -194,11 +228,11 @@ html, body {
   }
   #sketch-holder #design-container #bpmControl-holder {
     width: 75%;
-    color: red;
+    color: white;
     margin-left: 12.5%;
   }
   #sketch-holder #design-container button {
-    background-color: red;
+    background-color: #FF08AD;
     color: black;
     padding: 3px;
     font-family: 'Source Code Pro', monospace;
@@ -221,7 +255,7 @@ html, body {
     font-size: 36px;
   }
   #techno-sequencer #techno {
-    color: red;
+    color: #FF08AD;
     font-family: 'Russo One', sans-serif;
     font-size: 36px;
   }

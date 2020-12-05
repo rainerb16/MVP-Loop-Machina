@@ -81,7 +81,7 @@ function sequence(time, beatGrid) {
 // DRAW PLAYHEAD
 function playHead(beatGrid) {
     stroke(0, 0, 255);
-    fill(0, 0, 255, 20);
+    fill(100, 3, 68, 20);
     rect((beatGrid - 1) * cellWidth, 0, cellWidth, height);
 }
 
