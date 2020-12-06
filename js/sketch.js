@@ -21,6 +21,19 @@ function mouseClicked() {
     }
 }
 
+// LOAD SOUNDS
+function preload() {
+    hiHat = loadSound("assets/hi_hats/001Hat.wav", () => {});
+    kick = loadSound("assets/kicks/001Kick.wav", () => {});
+    clap = loadSound("assets/claps/004Clap.wav", () => {});
+    perc = loadSound("assets/percussion/004Perc.wav", () => {});
+    snare = loadSound("assets/snares/005Snare.wav", () => {});
+    openHat = loadSound("assets/hi_hats/001OpenHat.wav", () => {});
+    ride = loadSound("assets/hi_hats/006Ride.wav", () => {});
+    synthOne = loadSound("assets/synths/synth_one.wav", () => {});
+    synthThree = loadSound("assets/synths/synth_three.wav", () => {});
+} 
+
 function setup() {
 
     cnvs = createCanvas(525, 350);
@@ -62,17 +75,6 @@ function setup() {
 
     // PLAY POSITION
     playPosition = 0;
-
-    // LOAD SOUNDS
-    hiHat = loadSound("assets/hi_hats/001Hat.wav", () => {});
-    kick = loadSound("assets/kicks/001Kick.wav", () => {});
-    clap = loadSound("assets/claps/004Clap.wav", () => {});
-    perc = loadSound("assets/percussion/004Perc.wav", () => {});
-    snare = loadSound("assets/snares/005Snare.wav", () => {});
-    openHat = loadSound("assets/hi_hats/001OpenHat.wav", () => {});
-    ride = loadSound("assets/hi_hats/006Ride.wav", () => {});
-    synthOne = loadSound("assets/synths/synth_one.wav", () => {});
-    synthThree = loadSound("assets/synths/synth_three.wav", () => {});
 
     // SOUND PATTERNS
     hhPattern = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
