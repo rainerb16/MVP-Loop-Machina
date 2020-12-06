@@ -79,6 +79,8 @@ html, body {
             grid-template-columns: repeat(9, 0.5fr);
             color: white;
             margin-left: 3vw;
+            border: 1px solid white;
+            padding: 5vh 0vh 2vh 0vh;
         }
 
         #hihat,
@@ -94,81 +96,51 @@ html, body {
             padding-bottom: 40px;
         }
 
+        .slider {
+            text-align: center;
+            margin: 4vh 3vh 0vh 0vh;
+            
+        }
+
         #hihat {
             color: #04E762;
-
-            .slider {
-                transform: rotate(90deg);;
-            }
         }
 
         #openhat {
             color: #F5B700;
-
-            .slider {
-                transform: rotate(90deg);
-            }
         }
 
         #ride {
             color: #DC0073;
-
-            .slider {
-                transform: rotate(90deg);
-            }
         }
 
         #clap {
             color: #008BF8;;
-
-            .slider {
-                transform: rotate(90deg);
-            }
         }
 
         #perc {
             color: #E6FF00;
-
-            .slider {
-                transform: rotate(90deg);
-            }
         }
 
         #snare {
             color: #0606FF;
-
-            .slider {
-                transform: rotate(90deg);
-            }
         }
 
         #synthOne {
             color: #B700FF;
-
-            .slider {
-                transform: rotate(90deg);
-            }
         }
 
         #synthThree {
             color: #FF08AD;
-
-            .slider {
-                transform: rotate(90deg);
-            }
         }
 
         #kick {
             color: #FE8C12;
-
-            .slider {
-                transform: rotate(90deg);
-            }
         }
     }
 
     #volume-control {
-        margin: 5vh;
+        margin: 5vh 0vh 8vh 0vh;
     }
 
     #top-container {

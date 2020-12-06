@@ -78,6 +78,8 @@ html, body {
         grid-template-columns: repeat(9, 0.5fr);
     color: white;
     margin-left: 3vw;
+    border: 1px solid white;
+    padding: 5vh 0vh 2vh 0vh;
   }
   #sketch-holder #hihat,
   #sketch-holder #openhat,
@@ -92,71 +94,39 @@ html, body {
             transform: rotate(-90deg);
     padding-bottom: 40px;
   }
+  #sketch-holder .slider {
+    text-align: center;
+    margin: 4vh 3vh 0vh 0vh;
+  }
   #sketch-holder #hihat {
     color: #04E762;
-  }
-  #sketch-holder #hihat .slider {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
   }
   #sketch-holder #openhat {
     color: #F5B700;
   }
-  #sketch-holder #openhat .slider {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
   #sketch-holder #ride {
     color: #DC0073;
-  }
-  #sketch-holder #ride .slider {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
   }
   #sketch-holder #clap {
     color: #008BF8;
   }
-  #sketch-holder #clap .slider {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
   #sketch-holder #perc {
     color: #E6FF00;
-  }
-  #sketch-holder #perc .slider {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
   }
   #sketch-holder #snare {
     color: #0606FF;
   }
-  #sketch-holder #snare .slider {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
   #sketch-holder #synthOne {
     color: #B700FF;
-  }
-  #sketch-holder #synthOne .slider {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
   }
   #sketch-holder #synthThree {
     color: #FF08AD;
   }
-  #sketch-holder #synthThree .slider {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
   #sketch-holder #kick {
     color: #FE8C12;
   }
-  #sketch-holder #kick .slider {
-    -webkit-transform: rotate(90deg);
-            transform: rotate(90deg);
-  }
   #volume-control {
-    margin: 5vh;
+    margin: 5vh 0vh 8vh 0vh;
   }
   #top-container {
     display: -ms-grid;

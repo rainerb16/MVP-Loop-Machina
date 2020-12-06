@@ -34,15 +34,15 @@ function setup() {
     masterVolSlider.parent('masterVolControl-holder');
     
     // CREATE SLIDER FOR EACH SOUND
-    hiHatSlider = createSlider(0, 1, 0.1, 0.1);
-    kickSlider = createSlider(0, 1, 0.1, 0.1);
-    clapSlider = createSlider(0, 1, 0.1, 0.1);
-    percSlider = createSlider(0, 1, 0.1, 0.1);
-    snareSlider = createSlider(0, 1, 0.1, 0.1);
-    openHatSlider = createSlider(0, 1, 0.1, 0.1);
-    rideSlider = createSlider(0, 1, 0.1, 0.1);
-    synthOneSlider = createSlider(0, 1, 0.1, 0.1);
-    synthThreeSlider = createSlider(0, 1, 0.1, 0.1);
+    hiHatSlider = createSlider(0, 1, 0.1, 0.2);
+    kickSlider = createSlider(0, 1, 0.1, 0.2);
+    clapSlider = createSlider(0, 1, 0.1, 0.2);
+    percSlider = createSlider(0, 1, 0.1, 0.2);
+    snareSlider = createSlider(0, 1, 0.1, 0.2);
+    openHatSlider = createSlider(0, 1, 0.1, 0.2);
+    rideSlider = createSlider(0, 1, 0.1, 0.2);
+    synthOneSlider = createSlider(0, 1, 0.1, 0.2);
+    synthThreeSlider = createSlider(0, 1, 0.1, 0.2);
 
     hiHatSlider.parent('hihat-slider');
     openHatSlider.parent('openhat-slider');
