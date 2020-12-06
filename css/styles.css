@@ -98,31 +98,31 @@ html, body {
     text-align: center;
     margin: 4vh 3vh 0vh 0vh;
   }
-  #sketch-holder #hihat {
+  #sketch-holder #hihat-color {
     color: #04E762;
   }
-  #sketch-holder #openhat {
+  #sketch-holder #openhat-color {
     color: #F5B700;
   }
-  #sketch-holder #ride {
+  #sketch-holder #ride-color {
     color: #DC0073;
   }
-  #sketch-holder #clap {
+  #sketch-holder #clap-color {
     color: #008BF8;
   }
-  #sketch-holder #perc {
+  #sketch-holder #perc-color {
     color: #E6FF00;
   }
-  #sketch-holder #snare {
+  #sketch-holder #snare-color {
     color: #0606FF;
   }
-  #sketch-holder #synthOne {
+  #sketch-holder #synthOne-color {
     color: #B700FF;
   }
-  #sketch-holder #synthThree {
+  #sketch-holder #synthThree-color {
     color: #FF08AD;
   }
-  #sketch-holder #kick {
+  #sketch-holder #kick-color {
     color: #FE8C12;
   }
   #volume-control {
