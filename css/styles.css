@@ -67,6 +67,11 @@ html, body {
     color: #FF08AD;
     width: 25%;
   }
+  #sketch-holder hr {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-bottom: 8vh;
+  }
   #sketch-holder #volume-sliders-container {
     display: -ms-grid;
     display: grid;
@@ -74,12 +79,10 @@ html, body {
         -ms-flex-align: center;
             align-items: center;
     justify-items: center;
-    -ms-grid-columns: (0.5fr)[9];
-        grid-template-columns: repeat(9, 0.5fr);
+    -ms-grid-columns: (0.2fr)[9];
+        grid-template-columns: repeat(9, 0.2fr);
     color: white;
-    margin-left: 3vw;
-    border: 1px solid white;
-    padding: 5vh 0vh 2vh 0vh;
+    margin-left: 2vw;
   }
   #sketch-holder #hihat,
   #sketch-holder #openhat,
@@ -96,7 +99,7 @@ html, body {
   }
   #sketch-holder .slider {
     text-align: center;
-    margin: 4vh 3vh 0vh 0vh;
+    margin: 4vh 4vh 0vh 0vh;
   }
   #sketch-holder #hihat-color {
     color: #04E762;
@@ -126,7 +129,7 @@ html, body {
     color: #FE8C12;
   }
   #volume-control {
-    margin: 5vh 0vh 8vh 0vh;
+    margin: 5vh 0vh 3vh 0vh;
   }
   #top-container {
     display: -ms-grid;
@@ -190,7 +193,6 @@ html, body {
   }
   #techno-sequencer #techno {
     color: #FF08AD;
-    font-family: 'Russo One', sans-serif;
     font-size: 22px;
   }
   #footer-container {
@@ -215,8 +217,8 @@ html, body {
     font-family: 'Source Code Pro', monospace;
   }
   #sketch-holder {
-    margin: 2vh 0vh 2vh 0vh;
-    padding-bottom: 10vh;
+    margin: 2vh 0vh 3vh 0vh;
+    padding-bottom: 5vh;
     border: 3px solid black;
   }
   #sketch-holder #beatgrid-container {
