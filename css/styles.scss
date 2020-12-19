@@ -67,20 +67,23 @@ html, body {
                 border-collapse: separate;
                 border-spacing: 0 17px;
                 text-align: right;
-                color: #FF08AD;
+                color: #FF08AD; 
                 width: 25%;
             }
+        }
+        hr {
+            width: 75%;
+            margin-left: 12.5%;
+            margin-bottom: 8vh;
         }
 
         #volume-sliders-container {
             display: grid;
             align-items: center;
             justify-items: center;
-            grid-template-columns: repeat(9, 0.5fr);
+            grid-template-columns: repeat(9, 0.2fr);
             color: white;
-            margin-left: 3vw;
-            border: 1px solid white;
-            padding: 5vh 0vh 2vh 0vh;
+            margin-left: 2vw;
         }
 
         #hihat,
@@ -98,7 +101,7 @@ html, body {
 
         .slider {
             text-align: center;
-            margin: 4vh 3vh 0vh 0vh;
+            margin: 4vh 4vh 0vh 0vh;
         }
 
         #hihat-color {
@@ -139,7 +142,7 @@ html, body {
     }
 
     #volume-control {
-        margin: 5vh 0vh 8vh 0vh;
+        margin: 5vh 0vh 3vh 0vh;
     }
 
     #top-container {
@@ -202,7 +205,6 @@ html, body {
 
         #techno {
             color: #FF08AD;
-            font-family: 'Russo One', sans-serif;
             font-size: 22px;
         }
     }
@@ -233,8 +235,8 @@ html, body {
     }
 
     #sketch-holder {
-        margin: 2vh 0vh 2vh 0vh;
-        padding-bottom: 10vh;
+        margin: 2vh 0vh 3vh 0vh;
+        padding-bottom: 5vh;
         border: 3px solid black;
 
         #beatgrid-container {
